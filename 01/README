@@ -1,0 +1,32 @@
+# Task Manager
+
+A simple command-line Task Manager application written in Python.
+
+## Features
+
+* Add a mission
+* List all missions
+* Mark a mission as completed
+* Store missions in a text file
+* Simple menu system
+
+## Technologies
+
+* Python
+* File Handling
+* Functions
+* Dictionaries
+* Exception Handling
+
+## How to Run
+
+```bash
+python main.py
+```
+
+## Example
+
+1 - Add Mission
+2 - List Missions
+3 - Complete Mission
+4 - Exit
