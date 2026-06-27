@@ -1,42 +1,59 @@
-# Python Learning Journey
+🧠 Python OOP Learning Lab
+This repository contains my hands-on practice projects while learning Object-Oriented Programming (OOP) in Python.
 
-This repository was created to document my Python learning process and share the exercises, projects, and studies I complete throughout my journey.
+The goal of this repository is not to build production-ready software, but to deeply understand how real-world systems are structured using classes, objects, and system design principles.
 
-## About Me
+🚀 What I Learned
+Through these exercises, I practiced and improved my understanding of:
 
-* Software Engineering Student
-* Strong foundation in C and C++
-* Currently learning Python and improving my programming skills
-* Interested in Artificial Intelligence, Data Analysis, and Financial Technologies
-* My long-term goal is to develop AI-powered financial analysis and algorithmic trading systems
+Classes and Objects
+Constructors (__init__)
+Encapsulation (public, protected, private variables)
+Methods and object behavior
+State management
+Object-to-object interaction
+Basic system design thinking
+Logging systems (in-memory and file-based)
+Timestamp usage in transactions
 
-## Goals
+🏦 Project Example: Bank Account System
+One of the main exercises is a Bank Account Simulation System, which includes:
 
-The main objectives of this repository are:
+Deposit and withdrawal operations
+Transfer between accounts
+Transaction history tracking
+File-based logging system
+Timestamped transaction records
 
-* Improve my Python programming skills
-* Document my learning journey consistently
-* Strengthen my problem-solving abilities
-* Gain experience with Git and GitHub
-* Build practical projects and applications
-* Develop clean and maintainable coding habits
+This project simulates how real banking systems track user actions internally.
 
-## Contents
+📂 Project Structure
+python-oop-learning-lab/
+│
+├── bank_account.py
+├── transaction.txt (ignored in real usage)
+└── README.md
 
-This repository includes:
+🎯 Purpose of This Repository
+This repository is part of my learning journey in software development.
 
-* Python fundamentals
-* Practice exercises
-* Problem-solving challenges
-* File handling
-* Data structures
-* Object-Oriented Programming (OOP)
-* Mini projects
+It helps me:
 
-## Learning Log
+Build strong foundations in Python OOP
+Think like a backend developer
+Prepare for internship opportunities
+Develop problem-solving and system design skills
 
-This repository will be updated regularly as I learn new concepts and complete new exercises and projects.
+📌 Future Improvements
+In the next stages, I plan to add:
 
-Each commit represents a new step in my software development journey.
+Inheritance and polymorphism examples
+JSON-based storage system
+Exception handling improvements
+Modular project structure
+Unit testing
+REST API simulation (Flask/FastAPI basics)
 
-*"Be better than yesterday."*
+🧑‍💻 Author
+Arda
+Python & Software Engineering Student
