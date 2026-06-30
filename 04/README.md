@@ -1,89 +1,49 @@
-from cinema import Cinema
-from movie import Movie
-from customer import Customer
-from ticket import Ticket
+# 🎬 Cinema Management System
 
+## 📌 Project Description
 
-def main():
-    cinema = Cinema("My Cinema")
+This is a Python Object-Oriented Programming (OOP) project that simulates a simple cinema management system.
 
-    while True:
-        print("\n" + "=" * 40)
-        print("        CINEMA MANAGEMENT SYSTEM")
-        print("=" * 40)
+The system allows:
+- Managing movies
+- Managing customers
+- Selling and canceling tickets
+- Tracking transactions
+- Running a CLI-based user interface
 
-        print("1. Add Movie")
-        print("2. List Movies")
-        print("3. Remove Movie")
+The goal of this project is to practice:
+- OOP principles (Encapsulation, Classes, Objects)
+- UUID usage for unique identification
+- Real-world system design thinking
+- CLI application development
 
-        print("4. Add Customer")
-        print("5. List Customers")
+---
 
-        print("6. Sell Ticket")
-        print("7. Cancel Ticket")
+## 🧠 Features
 
-        print("8. Show Transactions")
-        print("0. Exit")
+### 🎥 Movie Management
+- Add new movies
+- Remove movies
+- List all movies
+- Seat reservation system
 
-        choice = input("\nSelect option: ")
+### 👤 Customer Management
+- Add customers
+- List customers
+- Track purchased tickets
+- View transaction history
 
-        # ---------------- ADD MOVIE ----------------
-        if choice == "1":
-            title = input("Title: ")
-            duration = int(input("Duration (min): "))
-            genre = input("Genre: ")
-            seats = int(input("Total Seats: "))
+### 🎟️ Ticket System
+- Sell tickets
+- Cancel tickets
+- Link tickets with customers and movies
+- Track all transactions
 
-            movie = Movie(title, duration, genre, seats)
-            print(cinema.add_movie(movie))
+### 🖥️ CLI System
+- Interactive terminal menu
+- User-driven operations
+- Real-time system interaction
 
-        # ---------------- LIST MOVIES ----------------
-        elif choice == "2":
-            movies = cinema.list_movies()
-            for m in movies:
-                print(m)
+---
 
-        # ---------------- REMOVE MOVIE ----------------
-        elif choice == "3":
-            movie_id = input("Movie ID: ")
-            print(cinema.remove_movie(movie_id))
-
-        # ---------------- ADD CUSTOMER ----------------
-        elif choice == "4":
-            name = input("Customer Name: ")
-            customer = Customer(name)
-            print(cinema.add_customer(customer))
-
-        # ---------------- LIST CUSTOMERS ----------------
-        elif choice == "5":
-            for c in cinema.list_customers():
-                print(c)
-
-        # ---------------- SELL TICKET ----------------
-        elif choice == "6":
-            customer_id = input("Customer ID: ")
-            movie_id = input("Movie ID: ")
-
-            print(cinema.sell_ticket(customer_id, movie_id))
-
-        # ---------------- CANCEL TICKET ----------------
-        elif choice == "7":
-            ticket_id = input("Ticket ID: ")
-            print(cinema.cancel_ticket(ticket_id))
-
-        # ---------------- TRANSACTIONS ----------------
-        elif choice == "8":
-            for t in cinema.show_transactions():
-                print(t)
-
-        # ---------------- EXIT ----------------
-        elif choice == "0":
-            print("Exiting system...")
-            break
-
-        else:
-            print("Invalid option!")
-
-
-if __name__ == "__main__":
-    main()
+## 🏗️ Project Structure
